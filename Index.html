@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Meta data-->
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content = "width=device-wdith, initial-scale=1.0" >
+    <meta name = "description" content = "CSC210 - Intro to web Presentation and Development - For classes a1,b2, and c2">
+    <meta name = "keywords" content = "Neumont, CSC210, web dev, student, portfolio, HMTL5, CSS">
+    <meta name = "author" content = "Summer Parker">
+
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml ">
+
+   
+    <link rel="stylesheet" href="style.css">
+
+    <title> Neumont Portfolio </title>
+</head>
+
+<body>
+<!-- Name and class banner-->
+    <header role = "banner">
+        <button class = "theme-toggle" id = "theme-toggle"> Dark Mode </button>
+        <section class= "container">
+            <h1> Summer Parker </h1> 
+            <p class = "tagline"> Welcome to my Portfolio! </p>
+        </section>
+    </header>
+</body>  
+
+    <!--Navigation Banner-->
+    <nav role="navigation" aria-label= "Main navigation"> 
+        <section class = "container">
+            <ul>
+                <li> <a href="index.html" aria-describedby="about-desc">About me </a> </li>
+                <li> <a href="skills.html" aria-describedby="skills-desc">My Skills </a></li>
+                <li> <a href="projects.html" aria-describedby="projects-desc">My Projects </a> </li>
+                <li> <a href="contact.html" aria-describedby="contact-desc">Contact me!</a> </li>
+            </ul>
+        </section>
+    </nav>
+    
+
+        <!-- Main Content-->
+        <main id = "main-content" role = "main">
+            <section class="container">
+
+                <section id="about" aria-labelledby="about-heading">
+                    <h2 id="about-heading">About me </h2>
+
+
+                    <img id="slideshow" src="PictureOfMe.jpg" alt="Slideshow">
+                    
+                    
+                <script>
+                    const images = ["PictureOfMe.jpg", "MeWaterfall.jpg", "MeLilyWaterfall.jpg", "MeLilyKiss2.jpg"];
+                    let index = 0;
+
+                    const slideshow = document.getElementById("slideshow");
+
+                    setInterval(() => {
+
+                    index = (index + 1) % images.length;
+                    slideshow.src = images[index];
+
+                    }, 3000); 
+                </script>
+
+                    <div class = "about-content"> </div>
+                        <div class= "about-text"> </div>
+                            <details>
+                                <summary>Class Journey</summary>
+                                <p>We started first html coding in my college class on July 3,2025, on top of basic hmtl we 
+                                    have to understand html and also CSS</p>
+                            </details>
+                            
+                        <!-- About Me-->
+                <aside class="About me" aria-labelledby="interests-aboutme"> </aside>
+                    <h3 id="interests-aboutme">About me</h3>
+                    <p>
+                        Hello! <strong >My name is Summer parker, </strong> I am a student at Neumont College of 
+                        Computer Science and currently in my 2nd school year at the school. I have 
+                        knowledge of multiple coding languages under my belt, with those languages mentioned below.
+                        I also have multiple other skills from the multiple places I have worked, like customer service, 
+                        cleaning, and handling money. <strong> Personally I quite enjoy interacting with people, </strong> which helps me with customer service as I provide an actual 
+                        good experience for those I talk to! 
+                    </p>
+
+                    <p id="quoteDisplay"> 
+
+                    </p>
+                    <h4 id="authorDisplay"> </h4>
+
+                    <p>
+                        Lastly, a fun little fact about me is I <strong> love </strong> Mothman and cryptozoology!
+                    </p>
+
+                    
+                
+
+                    <!--Small Navigation-->
+                    <nav role="navigation" aria-label= "Main navigation"> 
+                    <div class = "container">
+                        <ul>
+                            <li> <a href="interests.html" aria-describedby="interests-desc">My Interests </a></li>
+                            <li> <a href="favorites.html" aria-describedby="#FavWebs">My Favorite Websites </a> </li>
+                            <li> <a href="plans.html" aria-describedby="plans-desc">Future Plans</a> </li>
+                    </div>
+                        </ul>
+                    </nav>
+            
+                
+                </section> 
+            </section>
+        </main>
+
+        <footer> 
+            Copyright ©2025 by Summer Parker
+        </footer>
+
+        <!-- Java script-->
+        <script src="main.js"></script>
+
+</html>
+
